@@ -8,3 +8,10 @@ type Booking struct {
 	DateStart time.Time `json:"date_start"`
 	DateEnd   time.Time `json:"date_end"`
 }
+
+type BookingRequest struct {
+	BookingId int    `json:"booking_id"`
+	RoomId    int    `json:"room_id"`
+	DateStart string `json:"date_start"`
+	DateEnd   string `json:"date_end"`
+}

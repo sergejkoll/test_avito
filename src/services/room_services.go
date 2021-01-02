@@ -4,8 +4,9 @@ import (
 	"database/sql"
 	"log"
 	"strings"
-	"test_avito/src/models"
 	"time"
+
+	"test_avito/src/models"
 )
 
 type RoomModel struct {

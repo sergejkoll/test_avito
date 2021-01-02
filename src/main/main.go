@@ -25,6 +25,7 @@ func main() {
 
 	env := &handlers.Env{
 		Rooms: services.RoomModel{DB: db},
+		Booking: services.BookingModel{DB: db},
 	}
 
 	r := mux.NewRouter()
@@ -32,7 +33,7 @@ func main() {
 	r.HandleFunc("/room/{id}", env.DeleteRoomHandler).Methods("DELETE")
 	r.HandleFunc("/room", env.GetRoomsHandler).Methods("GET")
 
-	r.HandleFunc("/booking/create", env.CreateBookingHandler).Methods("POST")
+	r.HandleFunc("/booking/{room_id}/create", env.CreateBookingHandler).Methods("POST")
 	r.HandleFunc("/booking/{id}", env.DeleteBookingHandler).Methods("DELETE")
 	r.HandleFunc("/booking/{room_id}", env.GetBookingsHandler).Methods("GET")
 
