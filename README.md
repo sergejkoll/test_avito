@@ -20,3 +20,7 @@
 ## Документация
 
 https://app.swaggerhub.com/apis/sergejkoll/test_avito/1.0.0#/
+
+## Запуск сервиса
+
+Склонировать репозиторий в GOPATH/src, и запустить с помощью ```docker-compose up```
