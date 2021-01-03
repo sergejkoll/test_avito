@@ -19,6 +19,4 @@
     
 ## Документация
 
-```
 https://app.swaggerhub.com/apis/sergejkoll/test_avito/1.0.0#/
-```
